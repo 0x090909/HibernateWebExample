@@ -14,12 +14,13 @@ import org.springframework.context.annotation.Scope;
  *
  * @author FSEVERI\gutu2891
  */
-@Configuration() 
+@Configuration()
 @Scope("session")
 public class Sessione {
     private String nome;
 
     public Sessione() {
+        nome="";
     }
 
     public void setNome(String nome) {
